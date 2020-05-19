@@ -6,6 +6,7 @@ const heart = document.getElementById('heart');
 const submit = document.getElementById('submit');
 const likes = document.getElementsByClassName('likes')[0];
 const li = document.createElement('li');
+const form = document.getElementById('comment-form');
 const commentsList = document.getElementById('list');
 const commentInput = document.getElementById('comment-input');
 const liked = [];
@@ -26,6 +27,7 @@ let StartTimer = function (){
 
 let addComment = function(){
   commentsArr.push(commentInput.value);
+  form.reset();
 }
 
 let displayComments = function(commentsArr){
